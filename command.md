@@ -1,0 +1,1 @@
+npx @tailwindcss/cli -i ./styles.css -o ./newstyles.css --watch

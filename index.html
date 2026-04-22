@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="newstyles.css">
+  <title>Bella Sanchez</title>
+  <link rel="icon" href="images/logo-dot.svg" type="image/x-icon">
+  <link rel="package" href="package.json">
+  <!--- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400..800&family=Geologica:wght,CRSV@100..900,0&display=swap"
+    rel="stylesheet">
+  <!---bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body class="cursor-[url('images/cursor.svg')], auto">
+
+  <header class="text-center mx-auto pt-8 -pb-2">
+    <h1
+      class="py-[10rem] text-4xl text-white font-bold uppercase bg-[url('images/header-bg.png')] bg-contain bg-no-repeat bg-center tracking-[.3em] mx-8 mt-8">
+      <img src="images/logo-dot.svg" alt="Logo" class="inline-block w-12 h-12 mr-2">
+      Bella Sanchez
+    </h1>
+  </header>
+  <nav class="flex items-center mx-auto justify-center gap-8 sticky top-0 bg-white py-4 z-50">
+    <div class="nav-item">
+      <a href="#works" class="button btn-2 !no-underline hover:!underline text-black uppercase">Works</a>
+    </div>
+    <!--   <div class="nav-item">
+      <a href="#playground" class="button btn-2 !no-underline hover:!underline text-black uppercase">Playground</a>
+    </div> -->
+    <div class="nav-item">
+      <a href="#about" class="button btn-2 !no-underline hover:!underline text-black uppercase">About</a>
+    </div>
+    <div class="nav-item">
+      <a href="#contact" class="button btn-2 !no-underline hover:!underline text-black uppercase">Contact</a>
+    </div>
+  </nav>
+
+  <section class="mx-8 my-20" id="works">
+    <div id="worksCarousel" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#worksCarousel" data-bs-slide-to="0" class="active bg-black my-10"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#worksCarousel" data-bs-slide-to="1" class="bg-black my-10"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#worksCarousel" data-bs-slide-to="2" class="bg-black my-10"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="grid grid-cols-12 gap-8">
+            <img src="images/ks-s1.png" class="block w-full col-span-4" alt="...">
+            <img src="images/ks-s2.png" class="block w-full col-span-8" alt="...">
+          </div>
+          <div>
+            <div class="flex -mx-4 my-2 leading-none">
+              <button class="button justify-end group" type="button" data-bs-toggle="collapse" data-bs-target="#ks"
+                aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  class="w-18 h-18 content-center text-[#FFC413] group-hover:text-black transition duration-300 ease-in-out"
+                  viewBox="0 0 62 62" fill="none">
+                  <circle cx="31" cy="31" r="31" fill="currentColor" />
+                  <path d="M31 18.2002V43.8002M18.2 31.0002H43.7999" stroke="white" stroke-width="4"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="flex flex-col text-left mx-3 my-3">
+                  <p class="leading-none font-sans text-5xl font-()">Kind Stranger</p>
+                  <p class="uppercase mx-0.5 ml-1 leading-none tracking-[.3em] text-xs">Brand Identity</p>
+                </span>
+              </button>
+            </div>
+            <div class="collapse" id="ks">
+              <div class="card card-body">
+                <video loop autoplay class="w-full my-4">
+                  <source src="media/Kind_Stranger_Productions_Branding_Wordmark.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="font-light text-3xl">Kind Stranger is a production company born from the belief that stories
+                  have the power to connect us in profound ways.</p>
+                <p class="font-light mb-10">It's a space where creativity and connection thrive, where storytellers and
+                  audiences meet on common ground, and where the magic of shared experiences comes to life.</p>
+                <h1
+                  class="py-[10rem] text-center text-4xl text-white font-bold uppercase bg-[url('images/ks-gallery.png')] bg-contain bg-no-repeat bg-center tracking-[.3em] mx-8 mt-8">
+                  <div data-bs-toggle="modal" data-bs-target="#ksModal"
+                    class="cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 text-[#ffffff]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none"
+                      class="inline-block w-12 h-12 mr-2">
+                      <path
+                        d="M34.5 21.5V47.5M21.5 34.5H47.5M67 34.5C67 52.4493 52.4493 67 34.5 67C16.5507 67 2 52.4493 2 34.5C2 16.5507 16.5507 2 34.5 2C52.4493 2 67 16.5507 67 34.5Z"
+                        stroke="#FFC413" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                        class="hover:stroke-white" />
+                    </svg>
+                    Gallery & More
+                  </div>
+                </h1>
+              </div>
+            </div>
+            <div class="modal modal-xl font-(family-name:--font-family)" id="ksModal" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content mx-8 my-8">
+                  <div>
+                    <h2 class="modal-title m-8 ml-8 pt-8">MORE ON — Kind Stranger</h2>
+                  </div>
+                  <div class="grid grid-cols-2 gap-8 mx-8 my-8">
+                    <p class="uppercase mx-1 ml-1 leading-none tracking-[.3em] text-xs">BRAND IDENTITY</p>
+                    <p class="uppercase mx-1 ml-1 leading-none tracking-[.3em] text-xs text-right">DESIGNED AT <a
+                        href="https://wearezak.com/" target="_blank" class="text-black">ZAK</a></p>
+                  </div>
+                  <div class="modal-body justify-center mx-8 font-extralight">
+                    <p>While working at ZAK, I had the opportunity to work on the creation of Kind Stranger's brand
+                      identity, from concept ideation to final execution. As part of a collaborative team, we developed
+                      an identity that feels deeply human, approachable, and evocative.</p>
+                    <p>The design draws from the roots of filmmaking—the grainy beauty of 16mm film, the tactile charm
+                      of classic film reels, and the timeless dance of light and shadow.</p>
+                  </div>
+                  <div class="flex justify-center gap-8 my-8">
+                    <img src="images/Rectangle 18.png" class="block w-full ml-8" alt="...">
+                    <img src="images/Rectangle 19.png" class="block w-full mx-0" alt="...">
+                    <img src="images/Rectangle 20.png" class="block w-full mx-0" alt="...">
+                    <img src="images/Rectangle 21.png" class="block w-full mr-8" alt="...">
+                  </div>
+                  <div>
+                    <video loop autoplay class="w-full my-4">
+                      <source src="media/ks-vid1.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div class="modal-body justify-center mx-8 font-extralight">
+                    <p>At the heart of the identity is an unconventional type system that embodies the spirit of
+                      convergence—a meeting of ideas, perspectives, and talents, all unified by a shared passion for
+                      storytelling. Every detail was carefully considered to capture the humanity, grit, and raw beauty
+                      that define both the filmmaking process and the stories it illuminates.</p>
+                  </div>
+                  <div>
+                    <img src="images/ks-posters-wall.png" class="block w-full my-4" alt="...">
+                  </div>
+                  <div class="flex justify-center mx-8 gap-4">
+                    <img src="images/ks-filming.png" class="block w-full my-4" alt="...">
+                    <img src="images/ks-square-new.png" class="block w-full my-4" alt="...">
+                  </div>
+                  <div>
+                    <p class="font-extralight mx-12 mb-10">
+                      Kind Stranger's identity isn't just a visual expression; it's a celebration of the connections we
+                      form through storytelling.
+                      It's a reminder that, in the end, what makes a story powerful is its ability to reflect the human
+                      spirit—and bring us closer to one another.</p>
+                    </p>
+                  </div>
+                  <div class="flex mx-8 my-2 leading-none">
+                    <button class="button justify-end group" type="button" data-bs-dismiss="modal">
+                      <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-12 h-12 content-center text-[#FFC413] group-hover:text-black transition duration-300 ease-in-out"
+                        viewBox="0 0 62 62" fill="none">
+                        <circle cx="31" cy="31" r="31" fill="currentColor" />
+                        <path
+                          d="M18.1899 31.0003L43.7899 31.0003M18.1899 31.0003L30.9899 43.8003M18.1899 31.0003L43.9907 31.0003M18.1899 31.0003L31.0903 18.5003"
+                          stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      </svg>
+                      <span class="flex flex-col text-left mx-3 my-3">
+                        <p class="leading-none font-sans text-4xl font-()">BACK</p>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="grid grid-cols-12 gap-8">
+            <img src="images/cd-s2.png" class="block w-full col-span-8" alt="...">
+            <img src="images/cd-s1.png" class="block w-full col-span-4" alt="...">
+          </div>
+          <div>
+            <div class="flex -mx-4 my-2 leading-none">
+              <button class="button justify-end group" type="button" data-bs-toggle="collapse" data-bs-target="#cd"
+                aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  class="w-18 h-18 content-center text-[#FFC413] group-hover:text-black transition duration-300 ease-in-out"
+                  viewBox="0 0 62 62" fill="none">
+                  <circle cx="31" cy="31" r="31" fill="currentColor" />
+                  <path d="M31 18.2002V43.8002M18.2 31.0002H43.7999" stroke="white" stroke-width="4"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="flex flex-col text-left mx-3 my-3">
+                  <p class="leading-none font-sans text-5xl font-()">Culturally Defined</p>
+                  <p class="uppercase mx-0.5 ml-1 leading-none tracking-[.3em] text-xs">Brand Identity • Rebrand</p>
+                </span>
+              </button>
+            </div>
+            <div class="collapse border-0" id="cd">
+              <div class="card card-body">
+                <video loop autoplay class="w-full my-4">
+                  <source src="media/cd-video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="font-light text-3xl">Culturally Defined is an adult-focused Vancouver dance studio rooted in
+                  community, growth and above all - a good fucking time.</p>
+                <p class="font-light mb-10">It balances rigorous training with one of the most inviting and supportive
+                  communities. Offering a space where creativity, personal growth, and movement come together in a
+                  setting that feels both grounded and welcoming.</p>
+                <h1 id="gallery-button"
+                  class="py-[10rem] text-center text-4xl text-white font-bold uppercase bg-[url('images/ks-gallery2.png')] bg-contain bg-no-repeat bg-center tracking-[.3em] mx-8 mt-8">
+                  <div data-bs-toggle="modal" data-bs-target="#cdModal"
+                    class="cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 text-[#ffffff]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none"
+                      class="inline-block w-12 h-12 mr-2">
+                      <path
+                        d="M34.5 21.5V47.5M21.5 34.5H47.5M67 34.5C67 52.4493 52.4493 67 34.5 67C16.5507 67 2 52.4493 2 34.5C2 16.5507 16.5507 2 34.5 2C52.4493 2 67 16.5507 67 34.5Z"
+                        stroke="#FFC413" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                        class="hover:stroke-white" />
+                    </svg>
+                    Gallery & More
+                  </div>
+                </h1>
+                <div class="modal modal-xl font-(family-name:--font-family)" id="cdModal" tabindex="-1">
+                  <div class="modal-dialog">
+                    <div class="modal-content mx-8 my-8">
+                  <div>
+                    <h2 class="modal-title m-8 ml-8 pt-8">MORE ON — Culturally Defined</h2>
+                  </div>
+                      <div class="grid grid-cols-2 gap-8 mx-8 my-8">
+                        <p class="uppercase mx-0.5 ml-1 leading-none tracking-[.3em] text-xs">BRAND IDENTITY • REBRAND
+                        </p>
+                        <p class="uppercase mx-0.5 ml-1 leading-none tracking-[.3em] text-xs text-right">DESIGNED AT <a
+                            href="https://wearezak.com/" target="_blank" class="text-black">ZAK</a></p>
+                      </div>
+                      <div class="modal-body justify-center mx-8 font-extralight">
+                        <p>At ZAK, I had the opportunity to help shape the brand's refreshed visual identity—from
+                          strategy and concept through to final execution. Working alongside an incredible team, we
+                          built an identity that feels energetic, human, and unapologetically real.</p>
+                        <p>The visual system reflects the rhythm of dance culture itself: expressive, layered, and full
+                          of movement.</p>
+                        <p>Handwritten textures, gritty photo treatments, and a bold type system mirror the
+                          individuality of CD's community and the raw energy of the Clubhouse.</p>
+                      </div>
+                      <div class="flex justify-center gap-8 my-8">
+                        <img src="images/cd-square1.png" class="block w-full ml-8" alt="...">
+                        <img src="images/cd-square2.png" class="block w-full mx-0" alt="...">
+                        <img src="images/cd-square3.png" class="block w-full mx-0" alt="...">
+                        <img src="images/cd-square4.png" class="block w-full mr-8" alt="...">
+                      </div>
+                      <div>
+                        <img src="images/cd-rectangle.png" class="w-full my-4" alt="..." />
+                      </div>
+                      <div class="modal-body justify-center mx-8 font-extralight">
+                        <p>Every brand element was designed to resonate with those ready to push their limits, find
+                          their people, and celebrate progress—on and off the dance floor.</p>
+                        <p>The result is an identity that doesn't just represent a studio, but a lifestyle: one that
+                          invites you to show up as you are, and leave a little bolder than before. It's a reflection of
+                          the culture Culturally Defined has built—where growth, connection, and self-expression take
+                          center stage.</p>
+                      </div>
+                  <div class="flex mx-8 my-2 leading-none">
+                    <button class="button justify-end group" type="button" data-bs-dismiss="modal">
+                      <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-12 h-12 content-center text-[#FFC413] group-hover:text-black transition duration-300 ease-in-out"
+                        viewBox="0 0 62 62" fill="none">
+                        <circle cx="31" cy="31" r="31" fill="currentColor" />
+                        <path
+                          d="M18.1899 31.0003L43.7899 31.0003M18.1899 31.0003L30.9899 43.8003M18.1899 31.0003L43.9907 31.0003M18.1899 31.0003L31.0903 18.5003"
+                          stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      </svg>
+                      <span class="flex flex-col text-left mx-3 my-3">
+                        <p class="leading-none font-sans text-4xl font-()">BACK</p>
+                      </span>
+                    </button>
+                  </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="cwms" class="carousel-item">
+          <div class="grid grid-cols-12 gap-8">
+            <img src="images/cwms-s1.png" class="block w-full col-span-4" alt="...">
+            <img src="images/cwms-s2.png" class="block w-full col-span-8" alt="...">
+          </div>
+          <div>
+            <div class="flex -mx-4 my-2 leading-none">
+              <button class="button justify-end group" type="button" data-bs-toggle="collapse" data-bs-target="#cwms"
+                aria-expanded="false" aria-controls="collapseExample">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  class="w-18 h-18 content-center text-[#FFC413] group-hover:text-black transition duration-300 ease-in-out"
+                  viewBox="0 0 62 62" fill="none">
+                  <circle cx="31" cy="31" r="31" fill="currentColor" />
+                  <path d="M31 18.2002V43.8002M18.2 31.0002H43.7999" stroke="white" stroke-width="4"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="flex flex-col text-left mx-3 my-3">
+                  <p class="leading-none font-sans text-5xl font-()">Canada West Mountain School</p>
+                  <p class="uppercase mx-0.5 ml-1 leading-none tracking-[.3em] text-xs">Brand Identity • Rebrand</p>
+                </span>
+              </button>
+            </div>
+            <div class="collapse" id="cwms">
+              <div class="card card-body">
+                <video loop autoplay class="w-full my-4">
+                  <source src="media/cwms-video.mov" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="font-light text-3xl">Canada West Mountain School (CWMS) offers nothing short of an
+                  exhilarating journey encompassing mountaineering, wilderness survival, and conquering Squamish rocks.
+                </p>
+                <p class="font-light mb-10">With a legacy deeply rooted in these pursuits within the breathtaking
+                  landscapes of British Columbia, CWMS has served as a beacon for adventure enthusiasts seeking to
+                  experience and learn about the untamed beauty of Canada. However, recognizing the evolving needs of
+                  its audience and desiring to better capture the adventurous spirit of its brand, came the journey to
+                  reinvigorate its visual identity through a victitious rebrand.</p>
+                <h1
+                  class="py-[10rem] text-center text-4xl text-white font-bold uppercase bg-[url('images/cwms-gallery.png')] bg-contain bg-no-repeat bg-center tracking-[.3em] mx-8 mt-8 transition duration-300 ease-in-out">
+                  <div data-bs-toggle="modal" data-bs-target="#cwmsModal"
+                    class="cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 text-[#ffffff]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none"
+                      class="inline-block w-12 h-12 mr-2">
+                      <path
+                        d="M34.5 21.5V47.5M21.5 34.5H47.5M67 34.5C67 52.4493 52.4493 67 34.5 67C16.5507 67 2 52.4493 2 34.5C2 16.5507 16.5507 2 34.5 2C52.4493 2 67 16.5507 67 34.5Z"
+                        stroke="#FFC413" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                        class="hover:stroke-white" />
+                    </svg>
+                    Gallery & More
+                  </div>
+                </h1>
+                <div class="modal modal-xl font-(family-name:--font-family)" id="cwmsModal" tabindex="-1">
+                  <div class="modal-dialog">
+                    <div class="modal-content mx-8 my-8">
+                  <div>
+                    <h2 class="modal-title m-8 ml-8 pt-8">MORE ON — Canada West Mountain School</h2>
+                  </div>
+                      <div class="grid grid-cols-2 gap-8 mx-8 my-8">
+                        <p class="uppercase mx-0.5 ml-1 leading-none tracking-[.3em] text-xs">REBRAND • MARKETING
+                          CAMPAIGN</p>
+                        <p class="uppercase mx-0.5 ml-1 leading-none tracking-[.3em] text-xs text-right">ACCOLADES</p>
+                      </div>
+                      <div class="grid grid-cols-3 gap-4">
+                        <p class="font-light text-3xl col-span-2 ml-12">The rebranding of Canada West Mountain School
+                          was strategically driven to modernize the brand and enhance its appeal and practicality for
+                          adventure enthusiasts.</p>
+                        <p class="font-thin col-span-1 text-right mr-12 text-xs">
+                          <b class="font-black">2024 Applied Arts Student Awards</b><br>
+                          Winner for Brand Identity Design Program<br>
+                          <b class="font-black">2024 DesCan Salazar Awards</b><br>
+                          Honourable Mention for Branding Design<br>
+                          <b class="font-black">2024 World Brand Design Society</b><br>
+                          Article Feature<br>
+                          <b class="font-black">2025 World Brand Design Society Awards</b><br>
+                          Silver Medalist for Brand Identity Re-Design
+                        </p>
+                      </div>
+                      <video loop autoplay class="w-full my-4">
+                        <source src="media/cwms-vid2.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                      <div class="modal-body justify-center mx-8 font-extralight">
+                        <p>Drawing inspiration from navigational distress symbols, the new logo design incorporates
+                          intricate lines resembling latitude and longitude rules within outdoor maps. This design
+                          element captures the essence of exploration while emphasizing the brand's commitment to safety
+                          and preparedness in the wilderness. Moreover, the logo then transforms into a multitude of
+                          shapes, offering a dynamic visual experience. Depending on the angle it's viewed from, it can
+                          resemble a tent, a tree, a mountain, or the rugged face of a cliff, ready to be climbed.</p>
+                        <p>Additionally, the carefully selected colour palette further enhances this connection to
+                          nature, with deep grays symbolizing majestic mountains and vibrant blues and burnt oranges
+                          acting as visual guides for safety and direction.</p>
+                      </div>
+                      <div class="grid grid-cols-2 gap-4 mx-8 my-8">
+                        <img src="images/oldlogo-cwms.png" class="block w-full" alt="...">
+                        <img src="images/newlogo-cwms.png" class="block w-full" alt="...">
+                      </div>
+                      <div class="modal-body justify-center mx-8 font-extralight">
+                        <p>Functionality emerged as a key focal point in the comprehensive rebranding strategy. We can
+                          see an example of this included in the redesign of the business card. With measurements
+                          conveniently provided in inches and millimetres on distinct sides of the card, adventurers
+                          gain a practical tool for measuring distances on maps and assessing avalanche risk. This
+                          deliberate design enhancement underscores the commitment to enhancing safety and preparedness
+                          for outdoor expeditions.</p>
+                      </div>
+                      <div class="flex justify-center gap-8 my-8">
+                        <img src="images/climber-cwms.png" class="block w-full ml-8" alt="...">
+                        <img src="images/mountain-cwms.png" class="block w-full mx-0" alt="...">
+                        <img src="images/guy-cwms.png" class="block w-full mx-0" alt="...">
+                        <img src="images/clip-cwms.png" class="block w-full mr-8" alt="...">
+                      </div>
+                      <div>
+                        <img src="images/card-rectangle-cwms.png" class="w-full my-4" alt="..." />
+                      </div>
+                      <div class="grid grid-cols-2 gap-5 justify-center mx-12 font-extralight">
+                        <p><b class="font-sans text-3xl">Additionally, CWMS guides and instructors will now be outfitted
+                            in high-visibility colours
+                            that contrast with the natural surroundings.</b>
+                          <br>
+                          <br>
+                          This ensures that they remain easily identifiable
+                          to participants at all times, promoting safety and enhancing communication during outdoor
+                          activities. In contrast, customers and other individuals will be wearing subtle colours,
+                          providing a clear visual distinction and contributing to a safe and organized environment for
+                          both instructors and participants alike.
+                        </p>
+                        <img src="images/helmet-square-cwms.png" class="block w-full" alt="...">
+                      </div>
+                      <div>
+                        <img src="images/book-cwms.png" class="block w-full my-4" alt="...">
+                      </div>
+                      <div class="flex justify-center mx-8 gap-4">
+                        <img src="images/two-books-cwms.png" class="block w-full my-4" alt="...">
+                        <img src="images/open-book-cwms.png" class="block w-full my-4" alt="...">
+                      </div>
+                      <p class="font-light text-2xl mx-12">Rebranding transcends mere visual changes; it's a narrative
+                        poised
+                        to unfold. And with the launch of Canada West Mountain School's new identity, this narrative
+                        takes center stage.
+                      </p>
+                      <br>
+                      <p class="font-extralight mx-12">
+                        As Canada West Mountain School unveils its new identity, it invites individuals from all walks
+                        of life to embrace their inner seeker. The Seekers Series campaign embodies this ethos, serving
+                        as a vibrant celebration of the adventurous spirit inherent in CWMS's brand essence. Through
+                        captivating stories, immersive visuals, dynamic billboards and strategic partnerships with
+                        outdoor retailers, the Seekers Series aims to kindle the fire of exploration in a diverse array
+                        of adventurers. Each participant brings their unique background and experiences, adding richness
+                        and depth to the collective journey.
+                        <br>
+                        <br>
+                        Adding depth to the Seekers Series are the Field Notes books, offering invaluable insights
+                        ranging from wilderness first aid to avalanche response. These books are a treasure trove of
+                        wisdom drawn from years of experience, equipping seekers not only with gear but also with the
+                        knowledge necessary to navigate the challenges that lie ahead. They provide a glimpse into the
+                        rich educational offerings available through CWMS courses.
+                      </p>
+                      <div>
+                        <img src="images/posters-cwms.png" class="block w-full my-4" alt="...">
+                        <p class="font-extralight mx-12 mb-10">
+                          The rebranding of Canada West Mountain School goes beyond visual changes. It's a call to
+                          adventure, a promise of discovery, and a testament to exploration's enduring spirit.
+                          <br>
+                          <br>
+                          CWMS leads with careful design, strategic initiatives, and unwavering dedication to safety and
+                          education. Adventurers are invited to explore Canada's untamed beauty and emerge transformed.
+                        </p>
+                      </div>
+                  <div class="flex mx-8 my-2 leading-none">
+                    <button class="button justify-end group" type="button" data-bs-dismiss="modal">
+                      <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-12 h-12 content-center text-[#FFC413] group-hover:text-black transition duration-300 ease-in-out"
+                        viewBox="0 0 62 62" fill="none">
+                        <circle cx="31" cy="31" r="31" fill="currentColor" />
+                        <path
+                          d="M18.1899 31.0003L43.7899 31.0003M18.1899 31.0003L30.9899 43.8003M18.1899 31.0003L43.9907 31.0003M18.1899 31.0003L31.0903 18.5003"
+                          stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      </svg>
+                      <span class="flex flex-col text-left mx-3 my-3">
+                        <p class="leading-none font-sans text-4xl font-()">BACK</p>
+                      </span>
+                    </button>
+                  </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="my-10">
+    <div class="flex mx-8 -mt-5 mb-0 p-8">
+      <div class="grid grid-cols-4 gap-4">
+        <div class="bg-cover bg-center">
+          <img src="images/bella-headshot.jpg" alt="Bella" class="w-full h-auto" style="clip-path: url(#clipPath);">
+        </div>
+        <div class="flex gap-4 col-span-3 font-light">
+          <p class="text-lg leading-relaxed"><i class="text-5xl font-light font-sans mb-2">Hello, I'm Bella!</i>⠀
+            A designer who loves to stir things up by crafting visual experiences that
+            dig deep, revealing authentic expressions and leaving a mark that lasts.
+            <br>
+            <br>
+            Within my design process, I prioritize innovation and transparency. I believe in asking tough questions and
+            chasing after even bigger answers, always striving to carve out a niche of originality. I find immense
+            satisfaction in seeing projects evolve from inception to completion, cherishing the creative process's
+            exploration. My goal is to forge genuine connections through designs that provoke thought and curiosity.<br>
+            <br>
+            Through navigating creativity's chaos, I've learned to embrace the symphony of competing ideas, finding
+            brilliance within unpredictability. My aim? To craft designs that captivate, spark curiosity, and maybe even
+            inspire a little “wow” along the way, blending imagination, strategy, and storytelling to make an
+            impact.<br>
+          </p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <a class="btn !no-underline hover:!underline text-black font-bold uppercase my-4 mx-25 text-xl"
+      data-bs-toggle="collapse" href="#awards-recognition" role="button" aria-expanded="false"
+      aria-controls="awards-recognition">
+      Awards & Recognition
+    </a>
+    <div class="collapse mx-8 text-sm" id="awards-recognition">
+      <div class="grid grid-cols-12 gap-4">
+        <div class="font-thin col-span-3 col-start-4">
+          <p><b class="font-extrabold uppercase">World Brand Design Society</b><br>
+            2025 Identity Brand Design, Silver Award<br>
+            2025 Identity Brand Re-Design, Silver Award<br></p>
+
+          <p><b class="font-extrabold uppercase">D&AD</b> <br>
+            2024 New Blood: The Portfolios Winner<br></p>
+          <br>
+          <p><b class="font-extrabold uppercase">Graphis</b><br>
+            2025 New Talent, Silver Award<br>
+            2024 New Talent, Honourable Mention<br></p>
+          <br>
+          <p><b class="font-extrabold uppercase">Applied Arts</b><br>
+            2024 Student Awards, Brand Identity Design Program <br>
+            2024 Student Awards, Entire Design Program <br>
+            2023 Student Awards, Editorial Design Entire Book/Magazine<br>
+          </p>
+          <br>
+          <p><b class="font-extrabold uppercase">Arts Thread</b><br>
+            2024 Global Creative Finalist<br>
+          </p>
+        </div>
+        <div class="font-thin col-span-3 col-start-7">
+          <p><b class="font-extrabold uppercase">RGD</b><br>
+            2024 Trailblazer Award<br>
+            2024 Student Awards, Honourable Mention for Colour Design<br>
+            2024 DesignThinkers Vancouver Scholarship<br>
+            2023 Student Awards, Honourable Mention for Strategic Design<br>
+            2023 Student Awards, Honourable Mention for Storytelling<br>
+            2023 Student Awards, Honourable Mention for Accessible Design<br>
+            2023 #HeyRGD, Social Good Scholarship<br>
+            2022 Student Awards, .Design Award <br>
+            2022 Student Awards, Honourable Mention for Retail Design <br>
+            2022 Trailblazer Award<br>
+            2022 #HeyRGD, Branding Scholarship<br></p>
+        </div>
+        <div class="font-thin col-span-3 col-start-10 mr-8">
+          <p><b class="font-extrabold uppercase">DesCan</b><br>
+            2024 Jim Rimmer Awards, Honourable Mention<br>
+            2024 Salazar Awards, Honourable Mention for Branding Design<br>
+            2024 Salazar Awards, Honourable Mention for Print Design<br>
+            2023 Salazar Awards, Winner for Print Design<br>
+            2023 Salazar Awards, Winner for Interactive & UX/UI Design<br>
+            2023 Jim Rimmer Awards, Honourable Mention<br>
+            2022 Salazar Awards, Honourable Mention for Print Design <br>
+            2022 Salazar Awards, Honourable Mention for Brand Identity<br></p>
+          <br>
+          <p><b class="font-extrabold uppercase">Kwantlen Polytechnic University</b><br>
+            2024 KPU Student Leadership Award<br>
+            2023 Kwantlen Student Association Design Endowed Award <br></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="mt-20 bg-cover bg-black text-white grid grid-cols-6 gap-4 pb-10 pt-10">
+    <div class="col-span-3">
+      <h1 class="text-3xl font-sans mb-4 mx-8 pt-4">
+        <img src="images/logo-dot.svg" alt="Logo" class="inline-block w-12 h-12 mr-2">
+        Let's collaborate!</h1>
+      <p class="text-lg font-extralight leading-relaxed mb-4 mx-8">
+        Got a question, a sick project idea, or just feel like saying hi?<br>
+        Whether you're dreaming up a big collaboration or just want to<br> grab a coffee (or even a drink), I'm excited
+        to
+        connect!<br>
+        Can't wait to hear from you!
+      <br>
+      <br>
+      <a href="https://www.linkedin.com/in/bellasanchez/" class="btn !no-underline hover:!underline text-white uppercase my-4 mx-2 bg-transparent">LINKEDIN</a>
+      <a href="https://www.instagram.com/bellasanchez.ca/" class="btn !no-underline hover:!underline text-white uppercase my-4 mx-2 bg-transparent">INSTAGRAM</a>
+      <a href="hello@bellasanchez.ca" class="btn !no-underline hover:!underline text-white uppercase my-4 mx-2 bg-transparent">EMAIL</a>
+      </p>
+    </div>
+    <div class="flex gap-4 col-span-3 col-start-4 items-center justify-start">
+      <form class="w-full mr-20">
+        <label for="input-group-1" class="block mb-2.5 text-sm font-medium text-heading">Your Email</label>
+        <div class="relative">
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="#FFC413" stroke-linecap="round" stroke-width="2"
+                d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z" />
+            </svg>
+          </div>
+          <input type="text" id="input-group-1"
+            class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-[#FFC413] text-heading text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body"
+            placeholder="name@email.com">
+        </div>
+        <button type="submit"
+          class="btn !no-underline hover:!underline text-black uppercase my-4 -mx-3 border border-[#FFC413] bg-white">SUBMIT</button>
+      </form>
+    </div>
+  </section>
+
+
+  <svg class="sr-only">
+    <defs>
+      <clipPath id="clipPath" clipPathUnits="objectBoundingBox">
+        <path
+          d="M0.5,0 C0.776142375,0 1,0.223857625 1,0.5 C1,0.776142375 0.776142375,1 0.5,1 C0.223857625,1 0,0.776142375 0,0.5 C0,0.223857625 0.223857625,0 0.5,0 Z" />
+      </clipPath>
+    </defs>
+  </svg>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    type="application/javascript"></script>
+</body>
+
+</html>
